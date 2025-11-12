@@ -1,0 +1,52 @@
+## [增加 Shadcn-vue](https://www.shadcn-vue.com/docs/installation/nuxt.html)
+
+```bash
+ E:\ws-blog\monk-blog>npx nuxi prepare
+
+ WARN  Component directory does not exist: E:/ws-blog/monk-blog/components/ui                                 21:44:15
+
+√ Types generated in .nuxt                                                                               nuxi 21:44:15
+
+E:\ws-blog\monk-blog>npx shadcn-vue@latest init
+Need to install the following packages:
+shadcn-vue@2.3.2
+Ok to proceed? (y) y
+
+√ Preflight checks.
+√ Verifying framework. Found Nuxt 4.
+√ Validating Tailwind CSS config. Found v4.
+√ Validating import alias.
+√ Which color would you like to use as the base color? » Neutral
+√ Writing components.json.
+√ Checking registry.
+√ Updating CSS variables in app/assets/css/tailwind.css
+√ Installing dependencies.
+√ Created 1 file:
+  - app/lib/utils.ts                                                                                          21:46:41
+                                                                                                              21:46:41
+Success! Project initialization completed.                                                                    21:46:41
+You may now add components.
+```
+
+### 增加按钮
+
+```bash
+E:\ws-blog\monk-blog>npx shadcn-vue@latest add button
+√ Checking registry.
+√ Installing dependencies.
+√ Created 2 files:
+  - app/components/ui/button/Button.vue                                                                       21:48:29
+  - app/components/ui/button/index.ts
+```
+
+- app/app.vue
+
+```vue
+<template>
+  <div>
+    <div>
+      <Button>Click me</Button>
+    </div>
+  </div>
+</template>
+```

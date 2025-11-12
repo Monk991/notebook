@@ -1,0 +1,79 @@
+## [Nuxt项目初始化](https://nuxt.com.cn/docs/4.x/getting-started/installation/)
+
+
+### 项目初始化
+
+```bash
+E:\ws-blog>yarn create nuxt monk-blog
+yarn create v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+
+success Installed "create-nuxt@3.30.0" with binaries:
+      - create-nuxt
+[######] 6/6
+        .d$b.
+       i$$A$$L  .d$b
+     .$$F` `$$L.$$A$$.
+    j$$'    `4$$:` `$$.
+   j$$'     .4$:    `$$.
+  j$$`     .$$:      `4$L
+ :$$:____.d$$:  _____.:$$:
+ `4$$$$$$$$P` .i$$$$$$$$P`
+
+i Welcome to Nuxt!                                                                                       nuxi 21:02:40
+i Creating a new project in monk-blog.                                                                   nuxi 21:02:40
+undefined
+√ Which package manager would you like to use?
+undefined yarn
+o Installing dependencies...                                                                             nuxi 21:02:53
+! The local project doesn't define a 'packageManager' field. Corepack will now add one referencing yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610.
+! For more details about this field, consult the documentation at https://nodejs.org/api/packages.html#packagemanager
+
+yarn install v1.22.22
+info No lockfile found.
+[1/4] Resolving packages...
+warning nuxt > @nuxt/telemetry > git-url-parse > git-up > parse-url > @types/parse-path@7.1.0: This is a stub types definition. parse-path provides its own type definitions, so you do not need this installed.
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+warning "nuxt > @nuxt/devtools@3.1.0" has unmet peer dependency "vite@>=6.0".
+warning "nuxt > unplugin-vue-router@0.16.1" has unmet peer dependency "@vue/compiler-sfc@^3.5.17".
+warning "nuxt > @nuxt/devtools > vite-plugin-vue-tracer@1.1.3" has unmet peer dependency "vite@^6.0.0 || ^7.0.0".
+warning "nuxt > @nuxt/devtools > vite-plugin-inspect@11.3.3" has unmet peer dependency "vite@^6.0.0 || ^7.0.0-0".
+warning "nuxt > @nuxt/devtools > @nuxt/devtools-kit@3.1.0" has unmet peer dependency "vite@>=6.0".
+warning "nuxt > @nuxt/devtools > @vue/devtools-core > vite-hot-client@2.1.0" has unmet peer dependency "vite@^2.6.0 || ^3.0.0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0".
+warning "nuxt > @nuxt/devtools > vite-plugin-inspect > vite-dev-rpc@1.1.0" has unmet peer dependency "vite@^2.9.0 || ^3.0.0-0 || ^4.0.0-0 || ^5.0.0-0 || ^6.0.1 || ^7.0.0-0".
+[4/4] Building fresh packages...
+success Saved lockfile.
+$ nuxt prepare
+√ Types generated in .nuxt                                                                               nuxi 21:03:40
+Done in 46.37s.
+√ Installation completed.                                                                                nuxi 21:03:40
+undefined
+√ Initialize git repository?
+undefined Yes
+i Initializing git repository...                                                                                    nuxi 21:03:46
+
+Initialized empty Git repository in E:/ws-blog/monk-blog/.git/
+undefined
+√ Would you like to install any of the official modules?
+undefined No
+                                                                                                                    nuxi 21:03:50
+✨ Nuxt project has been created with the v4 template. Next steps:
+ › cd monk-blog                                                                                                     nuxi 21:03:50
+ › Start development server with yarn run dev                                                                       nuxi 21:03:50
+Done in 70.18s.
+```
+
+### 异常处理
+
+#### Failed to download https://raw.githubusercontent.com/nuxt/starter/templates/templates/v3.json
+
+* C:\Windows\System32\drivers\etc\hosts
+
+```
+# 增加
+185.199.108.133 raw.githubusercontent.com
+```
