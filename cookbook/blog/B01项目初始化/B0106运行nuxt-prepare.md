@@ -5,5 +5,5 @@ E:\ws-blog\monk-blog>npx nuxi prepare
 
  WARN  Component directory does not exist: E:/ws-blog/monk-blog/components/ui                                 21:44:15
 
-√ Types generated in .nuxt   
+√ Types generated in .nuxt
 ```

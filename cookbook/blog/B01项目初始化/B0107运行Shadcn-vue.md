@@ -50,3 +50,39 @@ E:\ws-blog\monk-blog>npx shadcn-vue@latest add button
   </div>
 </template>
 ```
+
+### 异常处理
+
+#### WARN Two component files resolving to the same name UiButton:
+
+- nuxt.config.ts
+
+```ts
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './app/components/ui'
+  },
+```
+
+- components.json
+
+```json
+{
+  // ...
+  "aliases": {
+    "components": "@/app/components",
+    "utils": "@/app/lib/utils",
+    "ui": "@/app/components/ui",
+    "lib": "@/app/lib",
+    "composables": "@/app/composables"
+  },
+  "registries": {}
+}
+```
